@@ -1,17 +1,17 @@
-
-//¿Cuál es el promedio de edad de un curso?
-
- function Calcularedades() {
-    let cA = parseInt(prompt("Indique cuantos alumnos registrará"));
-    let eA; //edades de los alumnos
-    let sA = 0; //Acumulador de las edades
-    let n; //ciclo
-    
-    for(n=1; n<=cA; n++){
-        eA= parseInt(prompt("Ingrese la edad del alumno" + " " + n));
-        sA = sA + eA;  
+class comercio {
+    constructor(nombre, articulo, talle, color) {
+        this.nombre = nombre;
+        this.articulo = articulo;
+        this.talle= talle;
+        this.color= color;
     }
-    console.log("El promedio de sus alumnos es de:" + " " + sA/cA + " " + "años");
 }
-Calcularedades();
+const prendas = [];
+prendas.push(new comercio("Sweater", 1 , "L", "azul"));
+prendas.push(new comercio("Calza", 2 , "M", "verde"));
+prendas.push(new comercio("Pantalon", 3 ,"XS" , "negro"));
+prendas.push(new comercio("Camiseta", 4 , "XXL", "negro"));
+prendas.push(new comercio("Guantes", 5 , "S", "blanco"));
+
+console.log(prendas);
 
